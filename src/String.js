@@ -66,12 +66,7 @@ define(
 		
 	},
 	
-	'public containsCharacter (string, string) -> boolean': function(string, character)
-	{
-		return this.containsCharacter(string, character, true);
-	},
-	
-	'public containsCharacter (string, string, boolean) -> boolean': function(string, character, caseSensitive)
+	'public containsCharacter (string, string, boolean = true) -> boolean': function(string, character, caseSensitive)
 	{
 		
 		// If the character is not a string

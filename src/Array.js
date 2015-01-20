@@ -22,12 +22,7 @@ define(
 		return (this.indexOf(element, array) > -1) ? true : false;
 	},
 	
-	'public removeElement (mixed, array) -> array': function(element, array)
-	{
-		return this.removeElement(element, array, false);
-	},
-	
-	'public removeElement (mixed, array, boolean) -> array': function(element, array, returnNew)
+	'public removeElement (mixed, array, boolean = false) -> array': function(element, array, returnNew)
 	{
 		var index = this.indexOf(element, array);
 		// @todo Custom error please
@@ -37,12 +32,7 @@ define(
 		return array;
 	},
 	
-	'public removeDuplicates (array) -> array': function(array)
-	{
-		return this.removeDuplicates(array, false);
-	},
-	
-	'public removeDuplicates (array, boolean) -> array': function(array, returnNew)
+	'public removeDuplicates (array, boolean = false) -> array': function(array, returnNew)
 	{
 		// Inspired by but not the same as the article below
 		// (the article creates a new array when we do not want to)
